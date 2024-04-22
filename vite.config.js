@@ -9,6 +9,12 @@ export default defineConfig({
                 'resources/js/app.js',
             ],
             refresh: true,
-        }),
+        })
     ],
+  server: {
+    https: true,
+    hmr: {
+        host: 'localhost',
+    },
+  }
 });
